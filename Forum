@@ -1,0 +1,17 @@
+# Program to check if a triangle is a right triangle
+# given that the sum of two angles is 90 degrees
+
+def is_right_triangle(angle1, angle2):
+    if angle1 + angle2 == 90 or angle1 == 90 or angle2 == 90:
+        return True
+    else:
+        return False
+
+# Example usage
+angle1 = float(input("Enter the first angle: "))
+angle2 = float(input("Enter the second angle: "))
+
+if is_right_triangle(angle1, angle2):
+    print("The triangle is a right triangle.")
+else:
+    print("The triangle is not a right triangle.")
